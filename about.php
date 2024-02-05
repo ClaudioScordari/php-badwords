@@ -15,7 +15,7 @@
 
     <div>
         <h1>
-            Output
+            Output parola e textarea
         </h1>
 
         <div>
@@ -60,6 +60,8 @@
             ?>
         </div>
 
+        <!-- ------------------------------------------------------------------------------------ -->
+
         <h1>
             Textarea con parola rimpiazzata
         </h1>
@@ -70,13 +72,15 @@
             ?>
         </div>
 
+        <!-- ------------------------------------------------------------------------------------ -->
+
         <h1>
             Textarea con lunghezza aggiornata
         </h1>
 
         <div>
             <?php 
-                echo strlen($myP);
+                echo strlen($myP) - strlen($word) + strlen('***');
             ?>
         </div>
     </div>
